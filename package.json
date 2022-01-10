@@ -64,6 +64,9 @@
   "engines": {
     "node": "12.* || 14.* || >= 16"
   },
+  "volta": {
+    "node": "16.13.1"
+  },
   "ember": {
     "edition": "octane"
   }
