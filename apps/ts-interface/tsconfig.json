@@ -1,40 +1,11 @@
 {
+  "files": [],
   "compilerOptions": {
-    "target": "es2020",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noEmitOnError": true,
-    "noEmit": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
     "baseUrl": ".",
-    "module": "es6",
-    "experimentalDecorators": true,
-    "paths": {
-      "ts-interface/tests/*": [
-        "tests/*"
-      ],
-      "ts-interface/*": [
-        "app/*"
-      ],
-      "*": [
-        "types/*"
-      ]
-    }
+    "composite": true
   },
-  "include": [
-    "app/**/*",
-    "tests/**/*",
-    "types/**/*"
+  "references": [
+    { "path": "./app" },
+    { "path": "./tests" }
   ]
 }
