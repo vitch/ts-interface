@@ -2,6 +2,7 @@
     "files": [],
     "references": [
       { "path": "apps/ts-interface" },
+      { "path": "packages/my-addon" }
     ]
   }
   
