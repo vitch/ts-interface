@@ -1,6 +1,6 @@
 export class MoesBar {};
 
-declare module 'ts-interface/bar/-core' {
+declare module 'my-addon/bar/-core' {
     interface BarRegistry {
         ['moes']: MoesBar;
     }
