@@ -4,7 +4,7 @@
     "composite": true
   },
   "references": [
-    { "path": "addon" },
-    { "path": "tests" }
+    { "path": "addon/tsconfig.json" },
+    { "path": "tests/tsconfig.json" }
   ]
 }

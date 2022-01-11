@@ -5,7 +5,7 @@
     "composite": true
   },
   "references": [
-    { "path": "./app" },
-    { "path": "./tests" }
+    { "path": "./app/tsconfig.json" },
+    { "path": "./tests/tsconfig.json" }
   ]
 }

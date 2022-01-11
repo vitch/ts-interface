@@ -1,8 +1,7 @@
 {
-    "files": [],
-    "references": [
-      { "path": "apps/ts-interface" },
-      { "path": "packages/my-addon" }
-    ]
-  }
-  
+  "files": [],
+  "references": [
+    { "path": "apps/ts-interface/tsconfig.json" },
+    { "path": "packages/my-addon/tsconfig.json" }
+  ]
+}
