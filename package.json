@@ -10,7 +10,8 @@
     "author": "Kelvin Luck",
     "workspaces": {
       "packages": [
-        "apps/*"
+        "apps/*",
+        "packages/*"
       ]
     },
     "devDependencies": {
