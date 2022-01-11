@@ -27,3 +27,8 @@
 /package.json.ember-try
 /package-lock.json.ember-try
 /yarn.lock.ember-try
+
+# typescript output
+*.tsbuildinfo
+/declarations
+/tests/dummy/declarations
