@@ -7,6 +7,7 @@ module('utils | getBar', function (hooks) {
   setupTest(hooks);
 
   test('getBar does what it should', function (assert) {
-    assert.strictEqual(getBar('moes'), 'moes');
+    let barName = 'moes' as never;
+    assert.strictEqual(getBar(barName), 'moes');
   });
 });
