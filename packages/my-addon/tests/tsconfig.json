@@ -8,11 +8,16 @@
       "dummy/tests/*": ["./*"],
       "dummy/*": ["./dummy/app/*", "./dummy/*"],
       "my-addon/tests/*": ["./*"],
-      "*": ["../types/*"]
+      "*": ["../types/*"],
+
+      // Why is this necessary? I'd hope that the reference below was enough but it seems not to be
+      "my-addon/test-support": ["../addon-test-support/"],
+      "my-addon/test-support/*": ["../addon-test-support/*"]
     },
   },
   "include": [".", "../types"],
   "references": [
-    { "path": "../addon/tsconfig.json" }
+    { "path": "../addon/tsconfig.json" },
+    { "path": "../addon-test-support/tsconfig.json" }
   ]
 }
