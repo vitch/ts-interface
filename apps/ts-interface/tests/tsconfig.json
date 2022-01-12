@@ -6,11 +6,21 @@
     "declarationDir": "../declarations/tests",
     "paths": {
       "ts-interface/tests/*": ["./*"],
-      "*": ["../types/*"]
+      "*": ["../types/*"],
+
+      // In this particular case we seem to need this here for the types from the
+      // addon to get picked up
+       "my-addon/test-support": ["../../../packages/my-addon/declarations/tests/"],
+       "my-addon/test-support/*": ["../../../packages/my-addon/declarations/tests/*"]
     },
   },
   "include": [".", "../types"],
   "references": [
-    { "path": "../app/tsconfig.json" }
+    { "path": "../app/tsconfig.json" },
+
+    // Normally, these are resolved through node_modules...
+    // but most of our addons don't have node_modules _and_
+    // our own addons wouldn't be inside node_modules anyway.
+    { "path": "../../../packages/my-addon/tsconfig.json" }
   ]
 }

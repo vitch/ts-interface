@@ -3,14 +3,14 @@
     "extends": "../../../tsconfig.compiler-options.json",
     "compilerOptions": {
       "baseUrl": ".",
-      "declarationDir": "../declarations",
+      "declarationDir": "../declarations/tests",
       "paths": {
         "my-addon": ["../declarations"],
         "my-addon/*": ["../declarations/*"],
         "my-addon/test-support": ["."],
         "my-addon/test-support/*": ["./*"],
 
-//        "*": ["../types"]
+        "*": ["../types"]
       }
     },
     "include": [".", "../types"],
