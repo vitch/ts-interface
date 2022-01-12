@@ -1,6 +1,6 @@
 {
     "$schema": "http://json.schemastore.org/tsconfig",
-    "extends": "../tsconfig.compiler-options.json",
+    "extends": "../../../tsconfig.compiler-options.json",
     "compilerOptions": {
       "declarationDir": "../declarations",
       "baseUrl": ".",
@@ -8,7 +8,7 @@
         "ts-interface": ["."],
         "ts-interface/*": ["./*"],
         "*": ["../types"],
-        
+
         // In this particular case we seem to need this here for the types from the
         // addon to get picked up
         "my-addon/*": ["../../../packages/my-addon/declarations/*"],
