@@ -1,7 +1,38 @@
 {
   "files": [],
-  "references": [
-    { "path": "apps/ts-interface/tsconfig.json" },
-    { "path": "packages/my-addon/tsconfig.json" }
+  "extends": "./tsconfig.compiler-options.json",
+  "compilerOptions": {
+    "paths": {
+      "my-addon": ["packages/my-addon/addon"],
+      "my-addon/*": ["packages/my-addon/addon/*"],
+      "my-addon/test-support": ["packages/my-addon/addon-test-support"],
+      "my-addon/test-support/*": ["packages/my-addon/addon-test-support/*"],
+      
+      "ts-interface": ["apps/ts-interface/addon"],
+      "ts-interface/*": ["apps/ts-interface/addon/*"],
+      "ts-interface/tests/*": ["apps/ts-interface/tests/*"]
+      
+    }
+  },
+  "include": [
+    "packages/**/app/**/*",
+    "packages/**/addon/**/*",
+    "packages/**/tests/**/*",
+    "packages/**/types/**/*",
+    "packages/**/test-support/**/*",
+    "packages/**/addon-test-support/**/*",
+    "apps/**/app/**/*",
+    "apps/**/tests/**/*",
+    "apps/**/types/**/*",
+    "apps/**/test-support/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "packages/**/node_modules",
+    "packages/**/dist",
+    "packages/**/DEBUG",
+    "apps/**/node_modules",
+    "apps/**/dist",  
+    "apps/**/DEBUG"
   ]
 }
