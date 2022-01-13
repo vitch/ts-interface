@@ -1,0 +1,23 @@
+{
+  "files": [],
+  "extends": "../../tsconfig.compiler-options.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "my-addon": ["./addon"],
+      "my-addon/*": ["./addon/*"],
+      "my-addon/test-support": ["./addon-test-support"],
+      "my-addon/test-support/*": ["./addon-test-support/*"]
+    }
+  },
+  "include": [
+    "types/",
+    "addon/",
+    "addon-test-support/",
+    "tests/"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
