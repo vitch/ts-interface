@@ -15,15 +15,11 @@
         "noUnusedParameters": true,
         "noImplicitReturns": true,
         "noEmitOnError": true,
-//        "noEmit": true,
+        "noEmit": true,
         "inlineSourceMap": true,
         "inlineSources": true,
         "baseUrl": ".",
         "module": "es6",
-        "experimentalDecorators": true,
-
-        "emitDeclarationOnly": true,
-        "noEmit": false,
-        "composite": true
+        "experimentalDecorators": true
     }
   }
