@@ -8,8 +8,8 @@
       "my-addon/test-support": ["packages/my-addon/addon-test-support"],
       "my-addon/test-support/*": ["packages/my-addon/addon-test-support/*"],
       
-      "ts-interface": ["apps/ts-interface/addon"],
-      "ts-interface/*": ["apps/ts-interface/addon/*"],
+      "ts-interface": ["apps/ts-interface/app"],
+      "ts-interface/*": ["apps/ts-interface/app/*"],
       "ts-interface/tests/*": ["apps/ts-interface/tests/*"]
       
     }
