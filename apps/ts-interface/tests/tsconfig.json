@@ -3,6 +3,7 @@
   "extends": "../../../tsconfig.compiler-options.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "rootDir": "../",
     "declarationDir": "../declarations/tests",
     "paths": {
       "ts-interface/tests/*": ["./*"],
@@ -14,7 +15,7 @@
        "my-addon/test-support/*": ["../../../packages/my-addon/declarations/tests/*"]
     },
   },
-  "include": [".", "../types"],
+  "include": [".", "../types", "../app"],
   "references": [
     { "path": "../app/tsconfig.json" },
 
